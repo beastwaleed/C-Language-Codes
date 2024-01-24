@@ -2,19 +2,16 @@
 int main(){
 
 int myarray[10];
-int num,n ;
+int num;
 
 printf("Enter 10 Numbers for Storing in Index;\n");
 
-printf("Enter Number of Elements in Array; ");
-scanf("%d", &n);
-
-	for(int i=0;i<n;i++){
-	printf("Number %d = ", i+1);
+	for(int i=0;i<10;i++){
+	printf("Number %d = ", i);
 	scanf("%d", &myarray[i]);
 	}
 
-	for(int i=n-1;i>=0;i--){
+	for(int i=0;i<10;i++){
 	printf("%d ", myarray[i]);
 	
 	}

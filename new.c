@@ -1,16 +1,18 @@
 #include<stdio.h>
-int main(){
 
-    char name[50];
-    FILE *file;
-    file= fopen("test1.txt","w");
+int main() {
+    int arr[2][2] = {
+        {1, 2},
+        {3, 4}
+    };
 
-    for(int i=0;i<1;i++){
-        printf("Enter a Name: ");
-        scanf("%[^\n]%*c",name);
-        fprintf(file,"%d. %s\n",i+1,name);
+    for (int col = 0; col < 2; col++) {
+        for (int row = 0; row < 2;row++) {
+            printf("%d ", arr[col][row]);  // Transpose indices
+        }
+        printf("\n");
     }
-    fclose(file);
 
     return 0;
-    }
+}
+

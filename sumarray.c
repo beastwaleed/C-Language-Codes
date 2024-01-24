@@ -1,23 +1,21 @@
-#include <stdio.h>
-int sum(int *ptr){
-
-    int sum=0;
-
-    for(int i=0;i<6;i++){
-        sum+=*ptr;
-        ptr++;
-        
-    }
-    return sum;
-}
-
+#include<stdio.h>
 int main(){
-int arr[6]={1,2,3,4,5,6};
-int *ptr=arr;
-int result=sum(ptr);
 
-printf("Sum of the Array is: %d ",result);
+int myarray[3];
+int num;
+int sum=0;
 
-return 0;
+printf("Enter 3 Numbers for Storing in Index;\n");
 
-}
+	for(int i=0;i<3;i++){
+	printf("Number %d = ", i);
+	scanf("%d", &myarray[i]);
+	sum+=myarray[i];
+	
+	}
+
+	printf("Sum of the Numbers is = %d ", sum);
+	
+	return 0;
+	
+	}
